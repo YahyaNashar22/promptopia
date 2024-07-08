@@ -37,6 +37,8 @@ const Feed = () => {
     fetchPosts();
   }, []);
 
+  console.log(allPosts);
+
   const filterPrompts = (searchtext) => {
     const regex = new RegExp(searchtext, "i");
     return allPosts.filter(
